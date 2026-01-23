@@ -1,6 +1,3 @@
-- Multi-taser support via Config.TaserWeapons
-- NUI credit line added
-- Folder structure standardised (client/server/configuration/web)
-- Updated public version check
 - Added README.md to the resource for better clarity and support
 - Fixed minor mistakes with version checking logic
+- Removed the necesity for a local changelog.txt for the resource.
