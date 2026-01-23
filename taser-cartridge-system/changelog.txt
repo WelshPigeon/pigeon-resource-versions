@@ -2,3 +2,5 @@
 - NUI credit line added
 - Folder structure standardised (client/server/configuration/web)
 - Updated public version check
+- Added README.md to the resource for better clarity and support
+- Fixed minor mistakes with version checking logic
