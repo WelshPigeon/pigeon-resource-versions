@@ -1,3 +1,4 @@
 - Multi-taser support via Config.TaserWeapons
-- NUI UI credit line added (By Pigeon Studios)
+- NUI credit line added
 - Folder structure standardised (client/server/configuration/web)
+- Updated public version check
