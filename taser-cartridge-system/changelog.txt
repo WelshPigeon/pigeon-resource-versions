@@ -1,0 +1,3 @@
+- Multi-taser support via Config.TaserWeapons
+- NUI UI credit line added (By Pigeon Studios)
+- Folder structure standardised (client/server/configuration/web)
