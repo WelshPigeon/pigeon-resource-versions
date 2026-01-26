@@ -1,1 +1,6 @@
-- Created Dice-Roll resource
+- Created Dice-Roll resource and established standard folder structure (client/server/configuration).
+- Added core /roll command with support for dice notation (e.g. d20, 2d6+3), numeric ranges (e.g. 1-500 / 100), and coin flips (coin/flip).
+- Implemented configurable limits and defaults via configuration/config.lua (max dice, max sides, max range, default dice/sides).
+- Added RP-friendly output using /me formatting with optional prefix/suffix support.
+- Added user feedback messages and /rollhelp examples for quick in-game guidance.
+- Included server-side version checking integration (Pigeon Studios style) for update notifications.
