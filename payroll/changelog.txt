@@ -1,1 +1,7 @@
-- Initial Commit for PayRoll
+- Added /payall command with scope support (all / police / statep / ambulance).
+- Implemented job/grade-based payout calculation using QBX/QBCore job payments.
+- Enforced off-duty pay rules (offDutyPay) and blocked non-positive payouts.
+- Added bank deposit payouts with configurable default reason and optional reason override.
+- Added Discord audit logging (executor, totals, paid player list) with webhook settings moved to configuration/config.lua.
+- Added export: PayPlayer(src, amount, reason) for use by other resources.
+- Added debug logging toggle via Config.Debug.
