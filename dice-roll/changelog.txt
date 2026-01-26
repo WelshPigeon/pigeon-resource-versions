@@ -4,3 +4,4 @@
 - Added RP-friendly output using /me formatting with optional prefix/suffix support.
 - Added user feedback messages and /rollhelp examples for quick in-game guidance.
 - Included server-side version checking integration (Pigeon Studios style) for update notifications.
+- Added a README.md for better support about the resource.
