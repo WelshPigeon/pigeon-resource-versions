@@ -5,3 +5,4 @@
 - Configurable schedule controls: interval checks (CheckIntervalMinutes) and optional hour-only runs (RunOnlyAtHour).
 - Added console-only command: stalepropertyowners (manual run on demand).
 - Integrated Pigeon Studios version checking on resource start (private repo friendly).
+- Added a README.md for better support about the resource.
