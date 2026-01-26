@@ -6,3 +6,4 @@
 - Added export: PayPlayer(src, amount, reason) for use by other resources.
 - Added debug logging toggle via Config.Debug.
 - Added README.md
+- Added VersionChecker Verification
