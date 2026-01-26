@@ -1,1 +1,7 @@
-- Initial Push for resource
+- Added automated stale-property scanning using configurable inactivity threshold (InactivityDays).
+- Pulls keyholder citizen IDs from the properties table and resolves player names from the players table.
+- Sends formatted Discord embeds with per-property keyholder lists (optional role mention support).
+- Includes batching to avoid oversized Discord messages (MaxPropsPerMessage).
+- Configurable schedule controls: interval checks (CheckIntervalMinutes) and optional hour-only runs (RunOnlyAtHour).
+- Added console-only command: stalepropertyowners (manual run on demand).
+- Integrated Pigeon Studios version checking on resource start (private repo friendly).
