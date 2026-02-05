@@ -4,3 +4,4 @@
 - Cleaned and documented configuration with clear job-based and whitelist-based examples.
 - Updated fxmanifest.lua to match current Pigeon Studios standards.
 - No functional or behavioural changes to vehicle restriction logic.
+- Added a README.md file.
