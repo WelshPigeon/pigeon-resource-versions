@@ -1,1 +1,6 @@
-Initial Push
+- Restructured resource into client/server/configuration folders.
+- Renamed scripts to unified main.lua naming convention.
+- Added automated version checking with public version endpoint support.
+- Cleaned and documented configuration with clear job-based and whitelist-based examples.
+- Updated fxmanifest.lua to match current Pigeon Studios standards.
+- No functional or behavioural changes to vehicle restriction logic.
