@@ -1,10 +1,16 @@
-- Added automatic duplicate stash detection during migrations
-- Added legacy stash integrity repair system
-- Added automatic duplicate stash regeneration using precise coordinates
-- Prevented migration failures caused by duplicate stash identifiers
-- Added safe unique_stash index recovery workflow
-- Improved migration resilience for legacy dumpster databases
-- Added detailed duplicate repair debug logging
-- Improved production database integrity handling
-- Hardened migration pipeline against historical stash collisions
-- Prepared database system for long-term persistence stability
+- Added production-standard repository infrastructure
+- Added comprehensive README documentation
+- Added CONTRIBUTING workflow standards
+- Added proprietary LICENSE and LICENSE.md
+- Added FiveM redistribution protections
+- Added escrow circumvention protections
+- Added GitHub Actions CI validation workflow
+- Added CODEOWNERS configuration
+- Added pull request templates
+- Added GitHub issue templates
+- Added ox_inventory setup documentation
+- Added repository branding assets
+- Added social preview assets
+- Added structured release tracking
+- Improved repository governance and production workflow
+- Prepared repository for long-term production maintenance
