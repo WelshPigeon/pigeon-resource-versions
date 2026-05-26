@@ -1,18 +1,10 @@
-- Initial production release
-- Persistent dumpster inventory system
-- ox_inventory integration
-- ox_target integration
-- Persistent dumpster stash registration
-- Automatic dumpster database migrations
-- MariaDB-compatible migration system
-- Precise coordinate-based stash persistence
-- Cooldown protection and anti-spam validation
-- Dumpster model validation
-- Suspicious activity logging
-- Graceful resource cleanup handling
-- Centralized constants architecture
-- Production-ready version checker integration
-- Configurable dumpster types and storage sizes
-- Lazy stash registration fallback support
-- Improved debug logging and startup handling
-- Production-standard repository structure
+- Added automatic duplicate stash detection during migrations
+- Added legacy stash integrity repair system
+- Added automatic duplicate stash regeneration using precise coordinates
+- Prevented migration failures caused by duplicate stash identifiers
+- Added safe unique_stash index recovery workflow
+- Improved migration resilience for legacy dumpster databases
+- Added detailed duplicate repair debug logging
+- Improved production database integrity handling
+- Hardened migration pipeline against historical stash collisions
+- Prepared database system for long-term persistence stability
