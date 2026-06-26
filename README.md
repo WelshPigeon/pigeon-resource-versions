@@ -1,95 +1,149 @@
 <div align="center">
-  <img src="web/img/ResourceVersionBanner.png" alt="Resource Version Tracking by Pigeon Studios" width="2000" />
+  <img src="web/img/ResourceVersionBanner.png" alt="Pigeon Studios Group resource version registry" width="2000" />
 </div>
 
 <div align="center">
   <h1>Pigeon Resource Versions</h1>
-</div>
-
-<div align="center">
-  <strong>Public version & changelog endpoints for Pigeon Studios resources.</strong><br>
-  Used by in-resource update checkers (FiveM) to determine whether a script is up to date.
+  <strong>Public version metadata for private Pigeon Studios Group FiveM resources.</strong>
 </div>
 
 ---
 
-## 🔍 Repository Information
+## Purpose
 
-| Field | Value |
-|------|------|
-| **Repository Name** | pigeon-resource-versions |
-| **Category** | Version Endpoints |
-| **Maintained By** | Pigeon Studios |
-| **Purpose** | Public `version` + `changelog.txt` files for private/internal resources |
+This repository does not contain private resource source code.
 
----
+It publishes small public metadata files used by in-resource update checkers. This lets private resources check whether they are current without exposing their code.
 
-## 🧩 What This Repo Is
+## Source Of Truth
 
-This repository does **not** contain full script source code.
+Each resource folder contains a canonical file:
 
-It contains small, public files used by update checkers inside resources, such as:
-- `version` (current release version)
-- `changelog.txt` (patch notes / update notes)
+```text
+<resource>/latest.json
+```
 
-This allows a resource hosted privately to still run a public update check via `raw.githubusercontent.com`.
+Humans edit `latest.json`. The compatibility files are generated:
 
----
+```text
+<resource>/version
+<resource>/changelog.txt
+registry.json
+```
 
-## 📁 Structure
+This keeps old checkers working while giving new checkers structured metadata.
 
-Each resource gets its own folder:
-pigeon-resource-versions/
-<resource-name>/
-version
-changelog.txt
+## Endpoint Formats
 
-Example:
-pigeon-resource-versions/
-taser-cartridge-system/
-version
-changelog.txt
+Root registry:
 
----
+```text
+https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/registry.json
+```
 
-## 🔗 Raw URL Format
+Latest resource metadata:
 
-### Version file
-https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/
-<resource-name>/version
+```text
+https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/<resource>/latest.json
+```
 
-### Changelog file
-https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/
-<resource-name>/changelog.txt
+Legacy version endpoint:
 
----
+```text
+https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/<resource>/version
+```
 
-## 🛠 Adding / Updating a Resource Version
+Legacy changelog endpoint:
 
-1) Update the resource folder:
-- Bump `<resource-name>/version`
-- Update `<resource-name>/changelog.txt` (optional)
+```text
+https://raw.githubusercontent.com/WelshPigeon/pigeon-resource-versions/main/<resource>/changelog.txt
+```
 
-2) Commit & push changes.
+## latest.json Format
 
-Resources using the update checker will automatically read the updated version.
+Schema:
 
----
+```text
+schema/latest.schema.json
+```
 
-## 🔐 Licensing
+```json
+{
+  "schema_version": 1,
+  "slug": "payroll",
+  "name": "PayRoll",
+  "status": "active",
+  "repository": "WelshPigeon/PayRoll",
+  "version": "1.0.3",
+  "tag": "v1.0.3",
+  "released_at": "2026-06-26",
+  "title": "Scoped payments and audit logging",
+  "notes": [
+    "Added /payall command with scope support.",
+    "Added Discord audit logging."
+  ],
+  "links": {
+    "support": "https://pigeonstudios.co.uk"
+  }
+}
+```
 
-| Item | Details |
-|------|---------|
-| **Contains Source Code** | No |
-| **Redistribution of Private Resources** | Not allowed |
-| **Use of Version Files** | Allowed for update-check functionality only |
+Required fields:
 
-> ⚠️ This repository only publishes version metadata.  
-> Any private scripts, assets, or proprietary systems remain the property of Pigeon Studios.
+- `schema_version`
+- `slug`
+- `name`
+- `status`
+- `version`
+- `released_at`
+- `title`
+- `notes`
 
----
+## Updating A Resource
 
-## 📄 Credits
+1. Edit `<resource>/latest.json`.
+2. Run:
 
-© Pigeon Studios  
-Version endpoint repository for internal/private FiveM resources.
+```bash
+python tools/build_registry.py
+```
+
+3. Commit the changed `latest.json`, `version`, `changelog.txt`, and `registry.json`.
+4. Push to `main`.
+
+## Adding A Resource
+
+1. Create a folder using the resource slug:
+
+```text
+my-resource/
+```
+
+2. Add `my-resource/latest.json`.
+3. Run:
+
+```bash
+python tools/build_registry.py
+```
+
+4. Commit the generated files.
+
+## Validation
+
+GitHub Actions runs the registry builder and fails if generated files are not committed.
+
+The builder validates:
+
+- JSON syntax
+- `schema_version` is `1`
+- folder slug matches `slug`
+- semantic version format
+- `released_at` uses `YYYY-MM-DD`
+- non-empty release notes
+- valid resource status
+
+## Branding
+
+Maintained by Pigeon Studios Group.
+
+Website: https://pigeonstudios.co.uk

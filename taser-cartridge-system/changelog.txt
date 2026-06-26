@@ -1,3 +1,3 @@
-- Added README.md to the resource for better clarity and support
-- Fixed minor mistakes with version checking logic
-- Removed the necesity for a local changelog.txt for the resource.
+- Added README documentation for clarity and support.
+- Fixed minor issues in version checking logic.
+- Removed the necessity for a local changelog.txt inside the resource.

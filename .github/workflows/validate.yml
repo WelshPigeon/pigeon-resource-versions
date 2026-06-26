@@ -1,0 +1,32 @@
+name: Validate Version Registry
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Registry
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Registry
+        run: python3 tools/build_registry.py
+
+      - name: Ensure Generated Files Are Committed
+        run: |
+          git diff --exit-code || {
+            echo "Generated files are out of date. Run python3 tools/build_registry.py and commit the result."
+            exit 1
+          }

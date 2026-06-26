@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "brand": "Pigeon Studios Group",
+  "generated_at": "2026-06-26T00:00:00Z",
+  "resources": {
+    "inactive-property-alert": {
+      "name": "Inactive Property Alert",
+      "status": "active",
+      "version": "1.0.1",
+      "tag": "v1.0.1",
+      "released_at": "2026-06-26",
+      "title": "Production stale property alerting",
+      "repository": "WelshPigeon/inactive-property-alert",
+      "latest": "inactive-property-alert/latest.json",
+      "version_file": "inactive-property-alert/version",
+      "changelog_file": "inactive-property-alert/changelog.txt"
+    },
+    "lock-vehicles": {
+      "name": "Lock Vehicles",
+      "status": "active",
+      "version": "1.0.2",
+      "tag": "v1.0.2",
+      "released_at": "2026-06-26",
+      "title": "Template alignment and configuration cleanup",
+      "repository": "WelshPigeon/lock-vehicles",
+      "latest": "lock-vehicles/latest.json",
+      "version_file": "lock-vehicles/version",
+      "changelog_file": "lock-vehicles/changelog.txt"
+    },
+    "payroll": {
+      "name": "PayRoll",
+      "status": "active",
+      "version": "1.0.3",
+      "tag": "v1.0.3",
+      "released_at": "2026-06-26",
+      "title": "Scoped payments and audit logging",
+      "repository": "WelshPigeon/PayRoll",
+      "latest": "payroll/latest.json",
+      "version_file": "payroll/version",
+      "changelog_file": "payroll/changelog.txt"
+    },
+    "pigeon-dice": {
+      "name": "Pigeon Dice",
+      "status": "active",
+      "version": "1.1.2",
+      "tag": "v1.1.2",
+      "released_at": "2026-06-26",
+      "title": "Production repository infrastructure",
+      "repository": "WelshPigeon/pigeon-dice",
+      "latest": "pigeon-dice/latest.json",
+      "version_file": "pigeon-dice/version",
+      "changelog_file": "pigeon-dice/changelog.txt"
+    },
+    "pigeon-trash": {
+      "name": "Pigeon Trash",
+      "status": "active",
+      "version": "1.2.1",
+      "tag": "v1.2.1",
+      "released_at": "2026-06-26",
+      "title": "Legacy dumpster inventory compatibility",
+      "repository": "WelshPigeon/pigeon-trash",
+      "latest": "pigeon-trash/latest.json",
+      "version_file": "pigeon-trash/version",
+      "changelog_file": "pigeon-trash/changelog.txt"
+    },
+    "taser-cartridge-system": {
+      "name": "Taser Cartridge System",
+      "status": "active",
+      "version": "1.0.6",
+      "tag": "v1.0.6",
+      "released_at": "2026-06-26",
+      "title": "Documentation and version checker cleanup",
+      "repository": "WelshPigeon/taser-cartridge-system",
+      "latest": "taser-cartridge-system/latest.json",
+      "version_file": "taser-cartridge-system/version",
+      "changelog_file": "taser-cartridge-system/changelog.txt"
+    }
+  }
+}

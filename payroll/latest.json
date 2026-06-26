@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "slug": "payroll",
+  "name": "PayRoll",
+  "status": "active",
+  "repository": "WelshPigeon/PayRoll",
+  "version": "1.0.3",
+  "tag": "v1.0.3",
+  "released_at": "2026-06-26",
+  "title": "Scoped payments and audit logging",
+  "notes": [
+    "Added /payall command with scope support (all, police, statep, ambulance).",
+    "Implemented job and grade based payout calculation using QBX/QBCore job payments.",
+    "Enforced off-duty pay rules (offDutyPay) and blocked non-positive payouts.",
+    "Added bank deposit payouts with configurable default reason and optional reason override.",
+    "Added Discord audit logging for executor, totals, and paid player list.",
+    "Moved webhook settings to configuration/config.lua.",
+    "Added export: PayPlayer(src, amount, reason) for use by other resources.",
+    "Added debug logging toggle via Config.Debug.",
+    "Added README documentation.",
+    "Added version checker verification."
+  ],
+  "links": {
+    "support": "https://pigeonstudios.co.uk"
+  }
+}

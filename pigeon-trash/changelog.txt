@@ -1,9 +1,9 @@
-- Fixed legacy dumpster inventory compatibility
-- Preserved existing ox_inventory stash identifiers
-- Disabled automatic coordinate stash rewrites during migrations
-- Added legacy coordinate fallback lookup
-- Added safe existing dumpster lookup priority
-- Fixed old dumpster inventories opening as empty
-- Fixed duplicate insert attempts for existing dumpsters
-- Improved backwards compatibility with legacy garbage_bins data
-- Protected existing dumpster contents during migration
+- Fixed legacy dumpster inventory compatibility.
+- Preserved existing ox_inventory stash identifiers.
+- Disabled automatic coordinate stash rewrites during migrations.
+- Added legacy coordinate fallback lookup.
+- Added safe existing dumpster lookup priority.
+- Fixed old dumpster inventories opening as empty.
+- Fixed duplicate insert attempts for existing dumpsters.
+- Improved backwards compatibility with legacy garbage_bins data.
+- Protected existing dumpster contents during migration.

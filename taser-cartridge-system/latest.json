@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "slug": "taser-cartridge-system",
+  "name": "Taser Cartridge System",
+  "status": "active",
+  "repository": "WelshPigeon/taser-cartridge-system",
+  "version": "1.0.6",
+  "tag": "v1.0.6",
+  "released_at": "2026-06-26",
+  "title": "Documentation and version checker cleanup",
+  "notes": [
+    "Added README documentation for clarity and support.",
+    "Fixed minor issues in version checking logic.",
+    "Removed the necessity for a local changelog.txt inside the resource."
+  ],
+  "links": {
+    "support": "https://pigeonstudios.co.uk"
+  }
+}

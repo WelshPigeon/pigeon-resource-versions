@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "slug": "inactive-property-alert",
+  "name": "Inactive Property Alert",
+  "status": "active",
+  "repository": "WelshPigeon/inactive-property-alert",
+  "version": "1.0.1",
+  "tag": "v1.0.1",
+  "released_at": "2026-06-26",
+  "title": "Production stale property alerting",
+  "notes": [
+    "Added automated stale-property scanning using configurable inactivity threshold (InactivityDays).",
+    "Pulls keyholder citizen IDs from the properties table and resolves player names from the players table.",
+    "Sends formatted Discord embeds with per-property keyholder lists, including optional role mention support.",
+    "Includes batching to avoid oversized Discord messages (MaxPropsPerMessage).",
+    "Configurable schedule controls: interval checks (CheckIntervalMinutes) and optional hour-only runs (RunOnlyAtHour).",
+    "Added console-only command: stalepropertyowners (manual run on demand).",
+    "Integrated Pigeon Studios Group version checking on resource start.",
+    "Added README documentation for setup and support."
+  ],
+  "links": {
+    "support": "https://pigeonstudios.co.uk"
+  }
+}

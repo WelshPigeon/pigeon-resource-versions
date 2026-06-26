@@ -1,7 +1,7 @@
-- Restructured resource into client/server/configuration folders.
+- Restructured resource into client, server, and configuration folders.
 - Renamed scripts to unified main.lua naming convention.
 - Added automated version checking with public version endpoint support.
 - Cleaned and documented configuration with clear job-based and whitelist-based examples.
-- Updated fxmanifest.lua to match current Pigeon Studios standards.
+- Updated fxmanifest.lua to match current Pigeon Studios Group standards.
 - No functional or behavioural changes to vehicle restriction logic.
-- Added a README.md file.
+- Added README documentation.

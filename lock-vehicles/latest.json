@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "slug": "lock-vehicles",
+  "name": "Lock Vehicles",
+  "status": "active",
+  "repository": "WelshPigeon/lock-vehicles",
+  "version": "1.0.2",
+  "tag": "v1.0.2",
+  "released_at": "2026-06-26",
+  "title": "Template alignment and configuration cleanup",
+  "notes": [
+    "Restructured resource into client, server, and configuration folders.",
+    "Renamed scripts to unified main.lua naming convention.",
+    "Added automated version checking with public version endpoint support.",
+    "Cleaned and documented configuration with clear job-based and whitelist-based examples.",
+    "Updated fxmanifest.lua to match current Pigeon Studios Group standards.",
+    "No functional or behavioural changes to vehicle restriction logic.",
+    "Added README documentation."
+  ],
+  "links": {
+    "support": "https://pigeonstudios.co.uk"
+  }
+}

@@ -1,13 +1,13 @@
-- Added production-standard repository infrastructure
-- Added GitHub Actions CI validation workflow
-- Added structured README documentation
-- Added CONTRIBUTING workflow standards
-- Added structured CHANGELOG tracking
-- Added issue templates and pull request templates
-- Added CODEOWNERS repository ownership configuration
-- Added repository banner and branding assets
-- Added production version checker integration
-- Updated fxmanifest for Cerulean and Lua 5.4 support
-- Added repository and license metadata to fxmanifest
-- Improved production deployment workflow support
-- Aligned repository with Pigeon Studios production standards
+- Added production-standard repository infrastructure.
+- Added GitHub Actions CI validation workflow.
+- Added structured README documentation.
+- Added CONTRIBUTING workflow standards.
+- Added structured CHANGELOG tracking.
+- Added issue templates and pull request templates.
+- Added CODEOWNERS repository ownership configuration.
+- Added repository banner and branding assets.
+- Added production version checker integration.
+- Updated fxmanifest for Cerulean and Lua 5.4 support.
+- Added repository and license metadata to fxmanifest.
+- Improved production deployment workflow support.
+- Aligned repository with Pigeon Studios Group production standards.
